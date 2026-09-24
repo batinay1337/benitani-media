@@ -1,0 +1,1 @@
+TikTok URL prefix dogrulama dosyasi bu klasorde durur; silinmemeli.
