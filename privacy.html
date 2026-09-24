@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gizlilik Politikası — Beni Tanı Yayın Aracı</title>
+<style>
+  :root{
+    --bg:#faf8f5; --fg:#1c1a17; --muted:#5f5850;
+    --line:#e6e0d8; --card:#fff; --accent:#b4451f;
+  }
+  @media (prefers-color-scheme:dark){
+    :root:not([data-theme="light"]){
+      --bg:#14120f; --fg:#f2ede6; --muted:#a49b90;
+      --line:#2c2823; --card:#1c1916; --accent:#e5793f;
+    }
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; background:var(--bg); color:var(--fg);
+    font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+    padding:0 20px;
+  }
+  .wrap{max-width:720px; margin:0 auto; padding-block:64px 80px}
+  .back{
+    display:inline-block; color:var(--muted); text-decoration:none;
+    font-size:14px; margin-bottom:28px;
+  }
+  .back:hover{color:var(--accent)}
+  header{border-bottom:1px solid var(--line); padding-bottom:28px; margin-bottom:36px}
+  h1{font-size:28px; margin:0 0 10px; letter-spacing:-.02em}
+  .date{color:var(--muted); font-size:14px; margin:0}
+  h2{font-size:18px; margin:36px 0 12px; letter-spacing:-.01em}
+  p{margin:0 0 16px}
+  ul{margin:0 0 16px; padding-left:22px}
+  li{margin-bottom:8px}
+  .card{
+    background:var(--card); border:1px solid var(--line);
+    border-radius:12px; padding:20px 22px; margin:24px 0;
+  }
+  .card p:last-child{margin-bottom:0}
+  table{
+    width:100%; border-collapse:collapse; margin:0 0 16px; font-size:15px;
+  }
+  th,td{
+    text-align:left; padding:10px 12px;
+    border-bottom:1px solid var(--line); vertical-align:top;
+  }
+  th{font-weight:600; color:var(--muted); font-size:13px; text-transform:uppercase; letter-spacing:.04em}
+  footer{
+    border-top:1px solid var(--line); margin-top:48px; padding-top:24px;
+    color:var(--muted); font-size:14px;
+  }
+  footer a{color:var(--accent); text-decoration:none; font-weight:500}
+  footer a:hover{text-decoration:underline}
+  .sep{margin:0 10px; opacity:.4}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<a class="back" href="/">&larr; Ana sayfa</a>
+
+<header>
+  <h1>Gizlilik Politikası</h1>
+  <p class="date">Son güncelleme: 24 Eylül 2026</p>
+</header>
+
+<p>
+  Bu politika, Beni Tanı Otomatik Yayın Aracı'nın ("araç") verileri nasıl
+  işlediğini açıklar. Araç, tek bir kişi tarafından kendi cihazında çalıştırılan
+  kişisel bir yazılımdır. Herkese açık bir hizmet sunmaz, kullanıcı kaydı almaz.
+</p>
+
+<div class="card">
+  <p>
+    <strong>Özet:</strong> Araç sunucu işletmez. Toplanan hiçbir veri bize
+    iletilmez; her şey aracı çalıştıran kişinin kendi bilgisayarında kalır.
+    Üçüncü taraflara veri satışı veya aktarımı yapılmaz.
+  </p>
+</div>
+
+<h2>İşlenen veriler</h2>
+<table>
+  <tr>
+    <th>Veri</th>
+    <th>Neden</th>
+    <th>Nerede durur</th>
+  </tr>
+  <tr>
+    <td>TikTok erişim ve yenileme anahtarları</td>
+    <td>Yetkilendirilmiş hesapta paylaşım yapabilmek</td>
+    <td>Yalnızca yerel diskte, <code>.env</code> dosyasında</td>
+  </tr>
+  <tr>
+    <td>Hesap adı ve profil görseli</td>
+    <td>Paylaşımın hangi hesaba gideceğini yayın öncesi göstermek</td>
+    <td>Ekranda gösterilir, kaydedilmez</td>
+  </tr>
+  <tr>
+    <td>Yayınlanan gönderinin kimliği</td>
+    <td>Aynı içeriğin ikinci kez paylaşılmasını önlemek</td>
+    <td>Yerel içerik dosyasında</td>
+  </tr>
+  <tr>
+    <td>Paylaşılacak görseller</td>
+    <td>TikTok'un içeriği indirebilmesi için geçici olarak yayına alınır</td>
+    <td>Yayın tamamlanınca silinir</td>
+  </tr>
+</table>
+
+<h2>Toplanmayan veriler</h2>
+<ul>
+  <li>Takipçi listeleri, yorumlar, mesajlar veya başka hesapların içerikleri</li>
+  <li>Konum bilgisi, cihaz tanımlayıcıları, reklam kimlikleri</li>
+  <li>Analitik, izleme çerezleri veya üçüncü taraf ölçümleme</li>
+</ul>
+
+<h2>Veri paylaşımı</h2>
+<p>
+  Veriler yalnızca paylaşımın yapıldığı platformun kendi API'si ile (TikTok,
+  Instagram) alışverişe girer. Bunun dışında hiçbir üçüncü tarafa aktarım,
+  satış veya kiralama yapılmaz. Reklam ağlarıyla veri paylaşılmaz.
+</p>
+
+<h2>Görsellerin geçici yayını</h2>
+<p>
+  TikTok, gönderiyi oluştururken görselleri kendi sunucusuna herkese açık bir
+  adresten indirir. Bu nedenle paylaşılacak görseller yayın süresince
+  <code>media.batinay.com</code> üzerinde erişilebilir olur. Gönderi yayına
+  girdikten sonra bu kopyalar otomatik olarak silinir.
+</p>
+
+<h2>Saklama ve silme</h2>
+<p>
+  Erişim anahtarları yalnızca aracın çalıştığı bilgisayarda tutulur ve
+  istendiği anda silinebilir. Yetkilendirmeyi tamamen kaldırmak için
+  TikTok uygulamasından <em>Ayarlar &rsaquo; Güvenlik ve izinler &rsaquo;
+  Uygulama izinleri</em> bölümünden erişim iptal edilebilir; bu durumda
+  araç hesaba erişemez hale gelir.
+</p>
+
+<h2>Güvenlik</h2>
+<p>
+  Erişim anahtarları sürüm kontrolüne dahil edilmez ve hiçbir sunucuya
+  gönderilmez. Tüm API iletişimi HTTPS üzerinden yapılır.
+</p>
+
+<h2>Çocukların gizliliği</h2>
+<p>
+  Araç 13 yaşın altındaki kişilere yönelik değildir ve onlardan bilerek
+  veri toplamaz.
+</p>
+
+<h2>Değişiklikler</h2>
+<p>
+  Bu politika güncellenirse yukarıdaki tarih değiştirilir. Önemli
+  değişiklikler bu sayfada yayınlanır.
+</p>
+
+<h2>İletişim</h2>
+<p>
+  Sorular için: <a href="mailto:batinayunsel@gmail.com">batinayunsel@gmail.com</a>
+</p>
+
+<footer>
+  <a href="/">Ana sayfa</a>
+  <span class="sep">·</span>
+  <a href="/terms.html">Kullanım Koşulları</a>
+</footer>
+
+</div>
+</body>
+</html>
